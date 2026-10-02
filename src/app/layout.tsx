@@ -4,6 +4,7 @@ import { DEFAULT_LOCALE, LOCALE_COOKIE, dirFor, isLocale } from "@/lib/i18n";
 import { Providers } from "@/components/providers";
 import { LocaleProvider } from "@/components/locale-provider";
 import { SiteHeader } from "@/components/site-header";
+// @ts-expect-error Next.js processes this stylesheet import at build time.
 import "./globals.css";
 
 export const metadata: Metadata = {
