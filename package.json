@@ -1,0 +1,38 @@
+{
+  "name": "events-ticketing-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "All-in-one events & ticketing platform: instant ticket issuance, in-browser QR check-in, and real-time organizer analytics.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint",
+    "seed:admin": "node scripts/seed-admin.mjs"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.3.0",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.117.2",
+    "@tanstack/react-query": "^5.90.2",
+    "clsx": "^2.1.1",
+    "html5-qrcode": "^2.3.8",
+    "next": "^15.5.4",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
